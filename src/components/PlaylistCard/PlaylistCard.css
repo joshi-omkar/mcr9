@@ -1,0 +1,4 @@
+.PlaylistCard{
+    display: flex;
+    flex-direction: column;
+}

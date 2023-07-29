@@ -1,0 +1,47 @@
+.AddPlaylistModel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  width: 480px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.AddPlaylistModel > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AddPlaylistModel > span > div {
+  cursor: pointer;
+}
+
+.AddPlaylistModel > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.AddPlaylistModel > div > input {
+  width: 100%;
+  padding: 6px;
+  font-size: 1rem;
+}
+
+.AddPlaylistModel > div > button {
+  width: 100%;
+  background-color: #509ecf;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.AddPlaylist>div{
+  cursor: pointer;
+}

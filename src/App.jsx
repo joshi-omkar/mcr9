@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import "./index.css";
 import SingleVideoPage from "./pages/SingleVideoPage/SingleVideoPage";
 import Watchlater from "./pages/Watchlater/Watchlater";
+import PlaylistPage from "./pages/PlaylistPage/PlaylistPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           />
           <Route path={"/video/:id"} exact element={<SingleVideoPage />} />
           <Route path={"/watchlater"} exact element={<Watchlater />} />
+          <Route path={"/playlist"} exact element={<PlaylistPage />} />
         </Routes>
       </div>
     </div>

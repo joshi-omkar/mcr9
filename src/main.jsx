@@ -6,6 +6,7 @@ import "./index.css";
 import CategoriesContext from "./context/CategoriesContext";
 import VideoContext from "./context/VideoDataContext";
 import WatchlaterContext from "./context/WatchlaterContext";
+import PlaylistContext from "./context/PlaylistContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -13,7 +14,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <CategoriesContext>
         <VideoContext>
           <WatchlaterContext>
-            <App />
+            <PlaylistContext>
+              <App />
+            </PlaylistContext>
           </WatchlaterContext>
         </VideoContext>
       </CategoriesContext>

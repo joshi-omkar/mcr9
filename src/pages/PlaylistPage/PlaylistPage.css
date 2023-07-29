@@ -1,0 +1,11 @@
+.playlist-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.PlaylistPage {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
