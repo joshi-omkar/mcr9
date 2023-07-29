@@ -1,0 +1,36 @@
+#movie_player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.SingleVideoCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-info>img{
+    border-radius: 100%;
+}
+
+.video-helper-buttons{
+    display: flex;
+    gap: 24px;
+}
+
+.video-helper-buttons>div{
+    cursor: pointer;
+}
+
+.video-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

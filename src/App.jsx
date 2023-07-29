@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import Sidebar from "./components/Sidebar/Sidebar";
 import "./index.css";
+import SingleVideoPage from "./pages/SingleVideoPage/SingleVideoPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             exact
             element={<CategoryPage />}
           />
+          <Route path={"/video/:id"} exact element={<SingleVideoPage />} />
         </Routes>
       </div>
     </div>

@@ -1,7 +1,12 @@
-import * as React from "react"
-const ExploreSVG = (props, {width, height}) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={width}
-  height={height} viewBox="0 0 48 48" {...props}>
+import * as React from "react";
+const ExploreSVG = (props, { width, height }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={width}
+    height={height}
+    viewBox="0 0 48 48"
+    {...props}
+  >
     <title>{"explore"}</title>
     <g data-name="Layer 2">
       <path fill="none" d="M0 0h48v48H0z" data-name="invisible box" />
@@ -11,5 +16,5 @@ const ExploreSVG = (props, {width, height}) => (
       </g>
     </g>
   </svg>
-)
-export default ExploreSVG
+);
+export default ExploreSVG;
