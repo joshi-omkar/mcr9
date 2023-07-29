@@ -1,16 +1,24 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Sidebar from './components/Sidebar/Sidebar'
-import './index.css'
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import Sidebar from "./components/Sidebar/Sidebar";
+import "./index.css";
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
-      <Routes>
-        <Route path={"/"} exact element={<Home />} />
-      </Routes>
+      <div className="right-side">
+        <Routes>
+          <Route path={"/"} exact element={<Home />} />
+          <Route
+            path={`/category/:category`}
+            exact
+            element={<CategoryPage />}
+          />
+        </Routes>
+      </div>
     </div>
   );
 }

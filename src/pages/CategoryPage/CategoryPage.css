@@ -1,0 +1,10 @@
+.video-container{
+    display: flex;
+    gap: 36px;
+}
+
+.CategoryPage{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}

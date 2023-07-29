@@ -7,3 +7,8 @@
 .category{
     padding: 16px;
 }
+
+.category>img{
+    width: 310px;
+    height: 180px;
+}
