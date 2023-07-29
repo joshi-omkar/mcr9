@@ -1,0 +1,16 @@
+.all-videos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.ExplorePage{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.search-input{
+    width: 100%;
+    padding: 6px;
+}

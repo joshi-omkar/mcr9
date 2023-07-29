@@ -20,3 +20,7 @@ a{
 .right-side{
     padding: 24px;
 }
+
+ul, li{
+    list-style-type: none;
+}

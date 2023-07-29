@@ -3,10 +3,14 @@ import AddPlaylistSVG from "../../../assets/AddPlaylistSVG";
 import "./AddPlaylist.css";
 import { usePlaylistData } from "../../../context/PlaylistContext";
 
-const AddPlaylistModel = ({ setIsClickOnAddPlaylist }) => {
+export const AddPlaylistModel = ({
+  setIsClickOnAddPlaylist,
+  onSinglePage,
+  onClickPlaylistName,
+}) => {
   const [name, setName] = useState("");
 
-  const { dispatch } = usePlaylistData();
+  const { playlistState, dispatch } = usePlaylistData();
 
   return (
     <div className="AddPlaylistModel">
@@ -24,13 +28,34 @@ const AddPlaylistModel = ({ setIsClickOnAddPlaylist }) => {
           onClick={(e) => {
             e.preventDefault();
             dispatch({ type: "add", payload: name });
-            setIsClickOnAddPlaylist(false)
-            setName('')
+            !onSinglePage && setIsClickOnAddPlaylist(false);
+            setName("");
           }}
         >
           Create Playlist
         </button>
       </div>
+      {onSinglePage && (
+        <div className="playlist-list">
+          <ul>
+            {playlistState.playlist.map((playlist, key) => (
+              <li key={key}>
+                <div onClick={() => onClickPlaylistName(playlist.title)}>
+                  <h2>{playlist.title}</h2>
+                  <div
+                    onClick={(e) => {
+                      e.preventDefault();
+                      dispatch({ type: "remove", payload: playlist?.title });
+                    }}
+                  >
+                    X
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
