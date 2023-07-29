@@ -1,0 +1,23 @@
+.sidebar>span>a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.sidebar{
+    /* width: 120px; */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    top: 90px;
+    /* left: 30px; */
+    height: 100vh;
+    padding: 20px;
+
+}
+
+.sidebar>span>a>p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
