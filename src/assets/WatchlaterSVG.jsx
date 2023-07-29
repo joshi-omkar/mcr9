@@ -1,15 +1,15 @@
 import * as React from "react"
-const WatchlaterSVG = (props, {width, height}) => (
+const WatchlaterSVG = (props, {width, height, stroke="#000", fill="none"}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    fill="none"
+    fill={fill}
     viewBox="0 0 24 24"
     width={width}
     height={height}
     {...props}
   >
     <path
-      stroke="#000"
+      stroke={stroke}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

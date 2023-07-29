@@ -16,6 +16,7 @@ const Categories = () => {
             to={`/category/${category.category
               .replace(/\s+/g, "")
               .toLowerCase()}`}
+            key={category._id}
           >
             <div className="category" key={category._id}>
               <img src={category.thumbnail} />

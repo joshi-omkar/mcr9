@@ -16,19 +16,19 @@ const Sidebar = () => {
         </Link>
       </span>
       <span className="">
-        <Link to={"/"}>
+        <Link to={"/explore"}>
           <ExploreSVG width={25} height={25} />
           <p>Explore</p>
         </Link>
       </span>
       <span className="">
-        <Link to={"/"}>
+        <Link to={"/playlist"}>
           <PlaylistSVG width={25} height={25} />
           <p>Playlist</p>
         </Link>
       </span>
       <span className="">
-        <Link to={"/"}>
+        <Link to={"/watchlater"}>
           <WatchlaterSVG width={25} height={25} />
           <p>Watchlater</p>
         </Link>

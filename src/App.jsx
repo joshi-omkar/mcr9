@@ -5,6 +5,7 @@ import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import Sidebar from "./components/Sidebar/Sidebar";
 import "./index.css";
 import SingleVideoPage from "./pages/SingleVideoPage/SingleVideoPage";
+import Watchlater from "./pages/Watchlater/Watchlater";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             element={<CategoryPage />}
           />
           <Route path={"/video/:id"} exact element={<SingleVideoPage />} />
+          <Route path={"/watchlater"} exact element={<Watchlater />} />
         </Routes>
       </div>
     </div>
